@@ -271,6 +271,10 @@
                     <label for="usr">Name:</label>
                     <input type="text" class="form-control" id="usr" name="usr" >
                 </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" name="pwd">
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="submit" class="btn" >OK</button>
