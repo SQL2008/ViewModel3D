@@ -56,7 +56,8 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
+              <li><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#setParam">Parameters</button></li>
+              <li><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Open Modal</button></li>
               <li><a href="#">Contact</a></li>
             </ul>
             <!--ul class="nav navbar-nav navbar-right">
@@ -232,5 +233,54 @@
             }
 
         </script>
+        
+        
+        <!--------------------------------------------------------------->
+         <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------------------------------------->
+        <form action="param" name="param" method="get">
+         <div class="modal fade" id="setParam" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Set parameters</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" name="usr" >
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn" >OK</button>
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+            
+        </form>
+        
     </body>
 </html>
