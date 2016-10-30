@@ -256,34 +256,33 @@
         </div>
 
         <!--------------------------------------------------------------->
-        <form action="param" name="param" method="get">
-         <div class="modal fade" id="setParam" role="dialog">
-          <div class="modal-dialog">
+        <form action="param" method="GET" id="formParam" >
+            <div class="modal fade" id="setParam" role="dialog">
+              <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Set parameters</h4>
-              </div>
-              <div class="modal-body">
-                <div class="form-group">
-                    <label for="usr">Name:</label>
-                    <input type="text" class="form-control" id="usr" name="usr" >
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Set parameters</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <form:input type="text" class="form-control" id="usr" name="usr" >
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <form:input type="password" class="form-control" id="pwd" name="pwd">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn" >OK</button>
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" name="pwd">
-                </div>
               </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn" >OK</button>
-                <button type="button" class="btn" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div> 
-            
+            </div>            
         </form>
         
     </body>
